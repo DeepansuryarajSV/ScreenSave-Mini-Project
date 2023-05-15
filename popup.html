@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.screenshotapi.net/ "> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="logo.png" alt="logo" class="logo rotate" width="40px">
+            <img src="title.png" class="title" alt="title" width="125px">
+        </div>
+        <div class="body">
+            <img src="" width="100" id="pic">
+            <div class="buttons">
+                        <div class="loader simple" style="margin-top: 5px;"><img src="logo.png" class="rotate-load"></div>
+                        <button type="button" class="c-button" id="screenshot"><b>ScreenShot</b></button>
+                        <select id="short-img-type" class="format">
+                            <option value="png">PNG</option>
+                            <option value="jpeg">JPEG</option>
+                            <option value="webp">WEBP</option>
+                            <option value="pdf">PDF</option>
+                        </select><br>
+                        <button type="button" class="btn-mul mul c-button" id="multishot"><b>multishot</b></button>
+                        <button type="button" class="download-mul mul c-button" id="download"><b>down</b></button>
+                        <select id="multi-img-type" class="format">
+                            <option value="png">I-png</option>
+                            <option value="jpg">I-jpg</option>
+                            <option value="webp">I-webp</option>
+                            <option value="pdf">1-PDF</option>
+
+                        </select>
+                        <br>
+                        <div class="loader long" style="margin-top: 55px;"><img src="logo.png" class="rotate-load"></div>
+                        <button type="button" class="c-button" id="long_screenshot" style="margin-top: 20px;"><b>Long ScreenShot</b></button>
+                        <select id="long-img-type" class="format">
+                            <option value="png">PNG</option>
+                            <option value="jpeg">JPEG</option>
+                            <option value="webp">WEBP</option>
+                            <option value="pdf">PDF</option>
+                        </select>
+                        <br>
+                        <div class="loader record" style="margin-top: 105px;"><img src="logo.png" class="rotate-load"></div>
+                        <button type="button" class="c-button" style="margin-top: 20px;" id="screenrec"><b>ScreenRecorder</b></button>
+                        <select id="rec-type" class="format">
+                            <option value="mp4">mp4</option>
+                            <option value="webm">webm</option>
+                        </select>  <br>
+                        <div class="btns">
+                            <button type="button" id="start" class="c-button str-stop-btn">Start</button>
+                            <button type="button" id="stop" class="c-button str-stop-btn">Stop</button>
+                        </div>
+                        <br>
+                        
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/src/FileSaver.js"></script>
+<script src="jsPDF-master/dist/jspdf.umd.min.js"></script>
+<!-- <script src="background.js"></script> -->
+<script src="popup.js"></script>
+</html>
