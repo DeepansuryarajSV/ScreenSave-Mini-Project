@@ -5,5 +5,5 @@
       - Multiple Screenshot (Signature feature)
       - Screen recording 
 <br>
-### NOTE : Extract the jsPDF-master zip to get the complete funtionality of the extension
+NOTE : Extract the jsPDF-master zip to get the complete funtionality of the extension
 
